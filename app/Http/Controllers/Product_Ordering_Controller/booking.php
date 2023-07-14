@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Product_Ordering_Controller;
 
     use Illuminate\Http\Request;
-    use App\Http\Controllers\Controller; 
+    use App\Http\Controllers\Controller;
     use App\Models\Products;
     use Illuminate\Support\Facades\Cookie;
     use Session;
@@ -17,12 +17,12 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     {
         public function opencheckoutpage()
         {
-           
+
             return view('Product-Order-Screens.checkout');
         }
         public function Shipping_Payment_Screen()
         {
-           
+
             return view('Product-Order-Screens.Shipping_Payment_Screen');
         }
         public function apply_promo_code(Request $request)
@@ -30,26 +30,26 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
 
                 $promo_code = $request->input('promo_code');
                // $Coupen_Code=Coupen_Code::find($promo_code);
-                
-                
+
+
                 if($Coupen=Coupen_Code::where('code',$promo_code)->first())
                 {
-                     
+
                     session(['promocode' => $Coupen->code]);
                     session(['discount' =>$Coupen->discount ]);
                     session(['message' =>'% Promo Code Applied Succesfully' ]);
-                    session()->reflash();   
-                  
-                    
+                    session()->reflash();
+
+
                     return back();
                 }
                 else
                 {
-                    //die 
-                    
+                    //die
+
                 return back()->with('invalid','You Entered Invalid Promo Code');
                 }
-            
+
         }
         public function  order_proceed(Request $request)
         {
@@ -60,15 +60,14 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                       'city'=>'required|max:60|regex:/^[a-zA-Z\s]*$/',
                       'state'=>'required|max:60|regex:/^[a-zA-Z\s]*$/',
                       'pincode'=>'required|digits_between:4,10',
-                      'mno'=>'required|digits:10',
-                    
-                       'alternativemno'=>'nullable|digits:10',
+                      'mno'=>'nullable|digits_between:10,13',
+                       'alternativemno'=>'nullable|digits_between:10,13',
                       'country'=>'required|max:30|regex:/^[a-zA-Z\s]*$/',
                 // 'MobileNumber'=>'required|numeric',
-                 
+
                 ]);
                   print_r($validation);
-               
+
                 /* Delivery Details*/
                 $address1=$request->input('Door_No');
                 $address2=$request->input('LandMark');
@@ -77,11 +76,11 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                 $pincode=$request->input('pincode');
                 $mno=$request->input('mno');
                 $alternativemno=$request->input('alternativemno');
-                
+
                 $country=$request->input('country');
-                
-               
-                        
+
+
+
 
                 $Delivery_Address=$address1.','.$address2.'<br>'.$city.','.$state.','.$country.'<br>'.$pincode.','.$mno.','.$alternativemno;
              /* Delivery Details*/
@@ -89,8 +88,8 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
             /* Order Details Starts Here*/
                 if(session('cart'))
                 {
-                    $total=0;$count=0;$order_details='';$delivery_charges=0;                    
-                    foreach (session('cart') as $id => $details) 
+                    $total=0;$count=0;$order_details='';$delivery_charges=0;
+                    foreach (session('cart') as $id => $details)
                     {
                         $count=$count +1 ;
                         $total += $details['Final_Price'] * $details['item_quantity'];
@@ -99,7 +98,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                         '<br> Price:'.$details["Final_Price"]);
                         $delivery_charges = $delivery_charges + $details['delivery_charges'] ;
                     }
-                
+
                 }
                 if(session('promocode'))
                 {
@@ -123,17 +122,18 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                  $Order->Coupen_Code=$promocode;
                  $Order->Amount=$Amount;
                  $Order->paymentmode=$p_method;
-                 $Order->save();       
+                 $Order->save();
                  $id=$Order->id;
-                
+
                  if($p_method=='Online')
                  {
-                    return redirect("proceed_to_Payment/$id");
+                    // return redirect("proceed_to_Payment/$id");
+                    return redirect("/payment-screen");
                  }
                  else
                  {
-                   
-    	               
+
+
     	                $welcomemessage='Hello '.$name.'<br>';
     	                $emailbody='Your Order Was Placed Successfully<br>
     	                <p>Thank you for your order. We’ll send a confirmation when your order ships. Your estimated delivery date is 3-5 working days. If you would like to view the status of your order or make any changes to it, please visit Your Orders on <a href="https://www.gainaloe.com">Gainaloe.com</a></p>
@@ -146,7 +146,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     	                $emailcontent=array(
     	                    'WelcomeMessage'=>$welcomemessage,
     	                    'emailBody'=>$emailbody
-    	                   
+
     	                    );
     	                    Mail::send(array('html' => 'emails.order_email'), $emailcontent, function($message) use
     	                    ($loginid, $name,$id)
@@ -154,20 +154,20 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     	                        $message->to($loginid, $name)->subject
     	                        ('Your Gainaloe.com order '.$id.' is Confirmed');
     	                        $message->from('codetalentum@btao.in','Gainaloe');
-    	                        
+
     	                    });
-                    
+
                             Session::forget('cart');
                             Session::forget('discount');
                             Session::forget('promocode');
                             session()->flash('success', 'Session data  is Cleared');
-                              
-                  
-                    return redirect("/Orders")->with('status','Order Placed Succesfully!');                  
+
+
+                    return redirect("/Orders")->with('status','Order Placed Succesfully!');
                  }
-                
+
         }
-       
-        
-        
+
+
+
     }

@@ -1,5 +1,5 @@
 <div class="container"> 
-    <h3 class="py-2 px-5">All Orders</h3>
+    <h3 class="py-2 px-5">Semua Pesanan</h3>
    <div class="row px-5">
        
        <div class="col-md-12">
@@ -7,10 +7,10 @@
                    <div class="card-body table-responsive">
                        <table class="table table-striped table-bordered ">
                            <thead>
-                               <th>Order_Id</th>
-                               <th>Order Details</th>
-                               <th>Delivery Address</th>
-                               <th>Total Price</th>
+                               <th>ID Pesanan</th>
+                               <th>Detail Order</th>
+                               <th>Alamat Pengiriman</th>
+                               <th>Harga Total</th>
    
                                <th>Action</th> 
                                
@@ -27,7 +27,7 @@
                                <td>{{$item->id}}</td>
                                <td><?php echo $item->Order_Details?></td>
                                <td><?php echo $item->Delivery_Address ?></td>
-                               <td>{{$item->Amount}}</td>
+                               <td>Rp{{number_format($item->Amount, 0,',','.')}}</td>
                                <td> 
                                 
                                 <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Check Status</a>

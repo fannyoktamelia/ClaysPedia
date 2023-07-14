@@ -6,10 +6,10 @@
                <div class="card-body">
                    <table class="table table-striped table-bordered">
                        <thead>
-                        <th>TXID</th>
-                           <th>Order_Id</th>
+                        <th>Transaksi ID</th>
+                           <th>ID Pesanan</th>
                          
-                           <th>Amount</th>
+                           <th>Total</th>
  
                            <th>Status</th>
 

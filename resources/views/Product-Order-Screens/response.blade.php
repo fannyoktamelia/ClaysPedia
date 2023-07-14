@@ -1,11 +1,11 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ClaysPedia @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
- 
- 
- 
+
+
+
 @if(session('payment_failure'))
   <script>
     $(document).ready(function () {
@@ -26,7 +26,7 @@
 
     </div>
 </section>
- 
+
 
 
   <!-- Central Modal Medium Failure -->
@@ -50,7 +50,7 @@
           <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
           <h3 style="color: red"> <?php echo session('payment_failure')?></h3>
           <p> Please Try Again</p>
-        
+
         </div>
       </div>
 

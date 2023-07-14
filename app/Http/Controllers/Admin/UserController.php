@@ -18,7 +18,7 @@ class UserController extends Controller
 
 
         $user->update();
-        return redirect()->back()->with('status', 'Role is Updated');
+        return redirect()->back()->with('status', 'Role Diperbarui');
 
     }
     public function deleteuser(Request $request,$id)
@@ -30,7 +30,7 @@ class UserController extends Controller
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin 
         $user->update();
-        return redirect()->back()->with('status', 'User Moved to Recycle Bin');
+        return redirect()->back()->with('status', 'User Dipindahkan ke Tempat Sampah');
 
     }
     public function restore(Request $request,$id)
@@ -43,7 +43,7 @@ class UserController extends Controller
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin 
         $user->update();
-        return redirect()->back()->with('status', 'User Restored Succesfully');
+        return redirect()->back()->with('status', 'User Berhasil Dipulihkan');
 
     }
     
@@ -51,7 +51,7 @@ class UserController extends Controller
     {
        $delete = User::find($id);
        $delete->delete();
-       return redirect()->back()->with('status','User Permanently Deleted  Successfully !!');
+       return redirect()->back()->with('status','User Berhasil Dihapus Secara Permanen');
     }
     
 }

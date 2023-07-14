@@ -28,7 +28,7 @@
                                                         </h4>
                                                                                                      
                                         <input type="hidden" class="product_id" value="{{ $details['item_id'] }}">
-                                                      Quantity:   <div class="modify_quantity">
+                                                      Kuantitas :   <div class="modify_quantity">
                                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                                           ><i class="fas fa-minus"></i></button>
                                                         <input class="quantity" min="1" name="quantity" value="{{ $details['item_quantity'] }}" type="number" style="width:50px;margin:0px;">

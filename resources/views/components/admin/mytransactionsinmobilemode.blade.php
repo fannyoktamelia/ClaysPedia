@@ -14,12 +14,12 @@
                             <div class="card ">
                             <div class=" py-3">
                                 <ul style="list-style:none;width:100%;">
-                                    <li> <strong>Order Id: </strong>  {{$item->Oder_No}}</li>
-                                        <li><strong>TXID: </strong><?php echo $item->TXNID?></li>
+                                    <li> <strong>Pesanan ID: </strong>  {{$item->Oder_No}}</li>
+                                        <li><strong>Transaksi ID: </strong><?php echo $item->TXNID?></li>
                                         
-                                        <li><strong>Amount: </strong><?php echo $item->amount?></li>
+                                        <li><strong>Total: </strong><?php echo $item->amount?></li>
                                     
-                                        <li><strong>Payment Status: </strong>{{$item->Status}}</li>
+                                        <li><strong>Status Pembayaran: </strong>{{$item->Status}}</li>
                                 </ul>
                                     
                                 

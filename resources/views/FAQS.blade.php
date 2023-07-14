@@ -1,10 +1,10 @@
-@extends('layout')
-@section('title') Gainloe - FAQ'S @endsection
+{{-- @extends('layout')
+@section('title') ClaysPedia - FAQ'S @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
 <section>
-<h1 align="center" class="black-text col-md-12" style="font-weight:bold;">Frequently Asked Questions</h1>
+<h1 align="center" class="black-text col-md-12" style="font-weight:bold;">requently Asked Question</h1>
   <p align="center"></p>
   <div align="center">
     <!--Grid column-->
@@ -22,13 +22,13 @@
                 aria-controls="collapseOne1">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Where do products are  made ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -46,17 +46,17 @@
 
             <!-- Card header -->
             <div role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading2" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading2"
                 aria-controls="heading2">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Are your ingredients and components are safe & durable ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -76,17 +76,17 @@ selective ingredients completely.
 
             <!-- Card header -->
             <div role="tab" id="headingOne3">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading3" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading3"
                 aria-controls="heading3">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Do your products fair trade policy ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -99,23 +99,23 @@ selective ingredients completely.
 
           </div>
           <!-- Q3 -->
-          
+
            <!--Q4-->
           <div class="card p-3 my-5">
 
             <!-- Card header -->
             <div role="tab" id="headingOne4">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading4" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading4"
                 aria-controls="heading4">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> How do you monitor and control the quality of your products ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -134,17 +134,17 @@ maintain certain formula to maintain unique quality.
 
             <!-- Card header -->
             <div role="tab" id="headingOne5">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading5" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading5"
                 aria-controls="heading5">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i>If I have question, what's the fastest way to get an answer ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -157,23 +157,23 @@ maintain certain formula to maintain unique quality.
 
           </div>
               <!--Q5-->
-              
+
                <!--Q6-->
              <div class="card p-3 my-5">
 
             <!-- Card header -->
             <div role="tab" id="headingOne6">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading6" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading6"
                 aria-controls="heading6">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Do your products vary from the product photos of your website ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -191,7 +191,7 @@ maintain certain formula to maintain unique quality.
 
             <!-- Card header -->
             <div role="tab" id="headingOne7">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading7" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading7"
                 aria-controls="heading7">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Will I be able to trace my order ?
@@ -200,7 +200,7 @@ maintain certain formula to maintain unique quality.
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -213,13 +213,13 @@ maintain certain formula to maintain unique quality.
 
           </div>
               <!--Q7-->
-              
+
                <!--Q8-->
              <div class="card p-3 my-5">
 
             <!-- Card header -->
             <div role="tab" id="headingOne8">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading8" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading8"
                 aria-controls="heading8">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i>Do I need to pay any additional taxes ?
@@ -228,7 +228,7 @@ maintain certain formula to maintain unique quality.
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -241,23 +241,23 @@ maintain certain formula to maintain unique quality.
 
           </div>
               <!--Q8-->
-              
+
                 <!--Q9-->
              <div class="card p-3 my-5">
 
             <!-- Card header -->
             <div role="tab" id="headingOne9">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading9" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading9"
                 aria-controls="heading9">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i> Can I customize my order for multiple purchase ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -270,23 +270,23 @@ maintain certain formula to maintain unique quality.
 
           </div>
               <!--Q9-->
-              
+
                <!--Q10-->
              <div class="card p-3 my-5">
 
             <!-- Card header -->
             <div role="tab" id="headingOne10">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading10" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading10"
                 aria-controls="heading10">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i>What if I do not feel satisfied with my goods ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -305,17 +305,17 @@ exchanging or some other process.
 
             <!-- Card header -->
             <div role="tab" id="headingOne11">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading11" 
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#heading11"
                 aria-controls="heading11">
                 <p class="mb-0 dark-grey-text" style="float:left;">
                     <i class="far fa-question-circle"></i>What is the return policy ?
-                    
+
                 </p>
                 <p align="right">
                     <i class="fas fa-angle-down rotate-icon"></i>
              </p>
               </a>
-              
+
             </div>
 
             <!-- Card body -->
@@ -328,7 +328,7 @@ exchanging or some other process.
 
           </div>
               <!--Q11-->
-           
+
         </div>
         <!-- Accordion wrapper -->
 
@@ -338,4 +338,4 @@ exchanging or some other process.
       </div>
 
 </section>
-@endsection
+@endsection --}}

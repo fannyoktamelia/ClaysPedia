@@ -18,13 +18,13 @@
                                                 
                                             
                                                  <h4 style="color:white;font-family: 'Balsamiq Sans', cursive;" >
-                             <strong>TXID: </strong><?php echo $item->TXNID?>
+                             <strong>Transaksi ID: </strong><?php echo $item->TXNID?>
                             </h4>
                           
                      
                                       
-                                    <p>   <strong>Amount: </strong><?php echo $item->amount?> <br>
-                                    <strong>Payment Status: </strong>{{$item->status}} </p>
+                                    <p>   <strong>Total: </strong><?php echo $item->amount?> <br>
+                                    <strong>Status Pembayaran: </strong>{{$item->status}} </p>
                         
                                               
                                     </div>

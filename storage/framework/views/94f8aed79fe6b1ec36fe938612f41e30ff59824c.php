@@ -1,18 +1,18 @@
-<?php $__env->startSection('title'); ?> Gainloe - FAQ'S <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> ClaysPedia - FAQ'S <?php $__env->stopSection(); ?>
 <?php $__env->startSection('keywords'); ?> Home,About,Contact,Car <?php $__env->stopSection(); ?>
 <?php $__env->startSection('description'); ?> Write some descripton about the webpage <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <section class="container">
 <h1 align="center" class="black-text col-md-12" style="font-weight:bold;">Shipping & Returns</h1>
-  
+
   <p align="center">Gainaloe will give more priority to the customer's happiness.We deliver the orders at the best quality with the best pricing</p>
   <div class="row text-center text-md-left">
     <div class="col-md-6 mb-4">
     <img class="card-img-top  animated pulse infinite slow" src="https://codyhouse.co/demo-templates/mercurio/assets/img/card-v8-img-3.jpg" alt="Card image cap">
     </div>
-    
+
     <div class="col-md-6 mb-4">
-   
+
     <p class="text-muted" style="margin-top:-20px;">
         <strong>
             <ul align="left">
@@ -25,7 +25,7 @@
             <li>When the order is delivered, Customers are not permitted to reject their order unless if any damage occurs.</li>
             <li>If you cancelled your order, Refund will be done within 2-3 working days.</li>
             <li>For any enquiry regarding your order you can directly contact us by using the contact us page “link”.</li>
-           
+
             </ul>
         </strong>
     </p>
@@ -33,4 +33,5 @@
     </div>
 </section>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\cpedia\resources\views/S_AND_R.blade.php ENDPATH**/ ?>

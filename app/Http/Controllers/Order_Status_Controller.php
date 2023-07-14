@@ -54,8 +54,8 @@ class Order_Status_Controller extends Controller
                             
         	                $welcomemessage='Hello '.$name.'';
         	                $emailbody='The Following Order is Cancelled Succesfully <br>
-        	                <h4>Order Details: </h4><p> Order No:'.$id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
+        	                <h4>Detail Order: </h4><p> Order No:'.$id.$Order_Details.'</p>
+        	                 <p><strong>Alamat Pengiriman:</strong>
         	               '.$Delivery_Address.'</p>
         	                <p> <strong>Total Amount:</strong>
         	                '.$Amount.'</p>

@@ -86,8 +86,8 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
         	                $emailbody='<p>Your Payment '.$amount.' towards Order '.$O_id. 'is Successfully Paid .
 Your Order is Confirmed. Estimated Delivery 3-5 Working days</p>
     	                 <br>
-        	                <h4>Order Details: </h4><p> Order No:'.$O_id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
+        	                <h4>Detail Order: </h4><p> Order No:'.$O_id.$Order_Details.'</p>
+        	                 <p><strong>Alamat Pengiriman:</strong>
         	               '.$Delivery_Address.'</p>
         	                <p> <strong>Total Amount:</strong>
         	                '.$Amount.'</p>
@@ -142,8 +142,8 @@ Your Order is Confirmed. Estimated Delivery 3-5 Working days</p>
         	                $emailbody=' <p>Your Payment '.$amount.' towards Order '.$O_id. 'is failed. <br>
         	                You Can Try Again by using the following link: <br>
         	                <a href="https://www.gainaloe.com/proceed_to_Payment/'.$O_id.'">https://www.gainaloe.com/proceed_to_Payment/'.$O_id.'</a></p>
-        	                <h4>Order Details: </h4><p> Order No:'.$O_id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
+        	                <h4>Detail Order: </h4><p> Order No:'.$O_id.$Order_Details.'</p>
+        	                 <p><strong>Alamat Pengiriman:</strong>
         	               '.$Delivery_Address.'</p>
         	                <p> <strong>Total Amount:</strong>
         	                '.$Amount.'</p>

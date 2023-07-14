@@ -26,70 +26,71 @@ aria-hidden="true">
                 <h3>Order Completed Succesfully </h3>
                 @endif
                     <div class="row wow fadeIn">
-    
+
                         <!--Grid column-->
                         <div class="col-md-12 ">
-    
+
                             <!--Card-->
                             <div class="card">
-    
+
                             <!--Card content-->
                             <div class="card-body">
-    
+
                                 <!-- Table  -->
                                 <table class="table table-hover">
                                      <tr>
                                         <th><i class="fas fa-shipping-fast "></i> Shipping  Status</th>
-                                        <td>  
+                                        <td>
                                                     {{session('Shipping_Status')}}
-    
-                                              
+
+
                                                 </td>
                                       </tr>
                                       <tr>
                                         <th><i class="fas fa-truck "></i> Delivery  Status:</th>
                                         <td>      {{session('Delivery_Status')}}
-                                      
-                                                </td>
-                                      </tr>
-                                      <tr> 
-                                        <th><i class="fas fa-money-check "></i> Payment Status:</th>
-                                        <td> 
-                                        @if(session('p_status')=='pending')
-                                         {{session('p_status')}}  <a href="/proceed_to_Payment/{{session('Order_id')}}" class="btaobtn btaobtn-success">Pay Now</a>
-                                         @else
-                                             {{session('p_status')}}
-                                         @endif
-                                               
+
                                                 </td>
                                       </tr>
                                       <tr>
-                                        <th><i class="fas fa-rupee-sign "></i> Payment Mode:</th>
+                                        <th><i class="fas fa-money-check "></i> Payment Status:</th>
+                                        <td>
+                                        @if(session('p_status')=='pending')
+                                         {{-- {{session('p_status')}}  <a href="/proceed_to_Payment/{{session('Order_id')}}" class="btaobtn btaobtn-success">Pay Now</a> --}}
+                                         {{session('p_status')}}  <a href="/payment-screen" class="btaobtn btaobtn-success">Pay Now</a>
+                                         @else
+                                             {{session('p_status')}}
+                                         @endif
+
+                                                </td>
+                                      </tr>
+                                      <tr>
+                                        <th><i class="fas fa-rupiah-sign "></i> Payment Mode:</th>
                                         <td>{{session('paymentmode')}}</td>
                                       </tr>
-                                
-    
-    
-    
-      
+
+
+
+
+
                                         </table>
                                         <!-- Table  -->
-    
-    
+
+
                             </div>
-    
+
                             </div>
                             <!--/.Card-->
-    
+
                         </div>
                         <!--Grid column-->
-    
-    
-    
+
+
+
                     </div>
                     <!--Grid row-->
             @else
-                <p class=" animated rotateIn"> 
+                <p class=" animated rotateIn">
                 <i class="fas fa-ban fa-3x"></i>
                 </p>
                 <h3>This Order Was Cancelled  By You On {{session('Order_Cancelled_On')}}</h3>

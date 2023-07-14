@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title') Gainloe @endsection
+@section('title') ClaysPedia @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -11,7 +11,7 @@
       {{ session('status') }}
   </div>
   @endif
-  
+
 
 </div>
 
@@ -27,5 +27,5 @@
   </section>
 
 <!-- Payments Section Ends Here-->
-  
+
 @endsection

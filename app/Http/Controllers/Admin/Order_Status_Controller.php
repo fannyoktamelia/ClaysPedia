@@ -10,7 +10,7 @@ namespace App\Http\Controllers\Admin;
     use App\Models\Coupen_Code;
     use App\Models\Order;
     use Illuminate\Support\Facades\Auth;
-    use Mail;
+    use Illuminate\Support\Facades\Mail;
     use App\User;
 
 class Order_Status_Controller extends Controller
@@ -53,8 +53,8 @@ class Order_Status_Controller extends Controller
                             
         	                $welcomemessage='Hello '.$name.'';
         	                $emailbody='<p>Your Order has been Shipped. Your estimated delivery date is 3-5 working days. If you would like to view the status of your order or make any changes to it, please visit Your Orders on <a href="https://www.gainaloe.com">Gainaloe.com</a></p><br>
-        	                <h4>Order Details: </h4><p> Order No:'.$id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
+        	                <h4>Detail Order: </h4><p> Order No:'.$id.$Order_Details.'</p>
+        	                 <p><strong>Alamat Pengiriman:</strong>
         	               '.$Delivery_Address.'</p>
         	                <p> <strong>Total Amount:</strong>
         	                '.$Amount.'</p>
@@ -180,8 +180,8 @@ class Order_Status_Controller extends Controller
         	                $welcomemessage='Hello '.$name.'';
         	                $emailbody='<p>Your Order Was Cancelled Successfully on '.$Order_Cancelled_On.'<br> 
         	                As per Your Request, we have cancelled your Order. If you paid any payment with us, it will be refunded within 2-3 Working Days...</p>
-        	                <h4>Order Details: </h4><p> Order No:'.$id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
+        	                <h4>Detail Order: </h4><p> Order No:'.$id.$Order_Details.'</p>
+        	                 <p><strong>Alamat Pengiriman:</strong>
         	               '.$Delivery_Address.'</p>
         	                <p> <strong>Total Amount:</strong>
         	                '.$Amount.'</p>

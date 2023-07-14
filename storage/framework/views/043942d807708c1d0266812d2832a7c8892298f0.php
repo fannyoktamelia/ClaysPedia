@@ -16,9 +16,9 @@
                                                 <div class="card-body">
                                                        
                                                             <p align="left" style="float:left;">
-                                                                <img src="<?php echo e(asset('assets/img/testimonials/rahul.jpg')); ?>" class="z-depth-1" style="width:100px;">
+                                                                <img src="<?php echo e(asset('assets/img/testimonials/karina.jpeg')); ?>" class="z-depth-1" style="width:100px;">
                                                             </p>
-                                                            <p ><span style="font-weight:bold;">Vijayanagaram Rahul</span> <br>Freelauncer</p>
+                                                            <p ><span style="font-weight:bold;">Katharina</span> <br>Freelancer</p>
                                                             <br><br>
                                                             <p align="left" class="card-text" style="font-family: 'Balsamiq Sans', cursive;display:block;">
                                                                 <i>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata 
@@ -42,9 +42,9 @@
                                                 <div class="card-body">
                                                        
                                                             <p align="left" style="float:left;">
-                                                                <img src="<?php echo e(asset('assets/img/testimonials/sandeep.jpg')); ?>" class="z-depth-1" style="width:100px;">
+                                                                <img src="<?php echo e(asset('assets/img/testimonials/YUNJIN.jpeg')); ?>" class="z-depth-1" style="width:100px;">
                                                             </p>
-                                                            <p ><span style="font-weight:bold;">sandeep</span> <br>Freelauncer</p>
+                                                            <p ><span style="font-weight:bold;">Jennifer Huh</span> <br>Influencer</p>
                                                             <br><br>
                                                             <p align="left" class="card-text" style="font-family: 'Balsamiq Sans', cursive;display:block;">
                                                                 <i>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata 

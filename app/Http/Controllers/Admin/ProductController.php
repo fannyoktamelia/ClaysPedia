@@ -85,7 +85,7 @@ class ProductController extends Controller
 
            }
            $products->save();
-           return redirect()->back()->with('status','Product Data Added Successfully');
+           return redirect()->back()->with('status','Data Produk Berhasil Ditambah');
 
     }
     public function update(Request $request, $id)
@@ -169,7 +169,7 @@ class ProductController extends Controller
 
         }
         $products->save();
-        return redirect()->back()->with('status','Product Data Updated Successfully Successfully');   
+        return redirect()->back()->with('status','Data Produk Berhasil Diperbarui');   
     }
     public function deleteproduct(Request $request, $id)
     {
@@ -180,7 +180,7 @@ class ProductController extends Controller
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin (inactive_User)
         $Products->update();
-        return redirect()->back()->with('status', 'Products Moved to Recycle Bin');
+        return redirect()->back()->with('status', 'Produk Dipindahkan ke Recycle Bin');
 
    
     }
@@ -193,7 +193,7 @@ class ProductController extends Controller
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin (inactive_User)
         $Products->update();
-        return redirect()->back()->with('status', 'Products Restored Succesfully');
+        return redirect()->back()->with('status', 'Produk Berhasil Dipulihkan');
 
    
     }
@@ -202,6 +202,6 @@ class ProductController extends Controller
     
             $delete = Products::find($id);
             $delete->delete();
-            return redirect()->back()->with('status','Product Permanently Deleted  Successfully !!');
+            return redirect()->back()->with('status','Produk Berhasil Dihapus Secara Permanen');
     }
 }

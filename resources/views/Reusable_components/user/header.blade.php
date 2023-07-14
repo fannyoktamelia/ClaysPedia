@@ -58,25 +58,31 @@
 
             <ul style="margin-top:5px;">
 
-                <li class="active"><a href="/">Beranda</a></li>
-                <li><a href="/#About">Pembelajaran</a></li>
-                <li><a href="/#Products">Galeri</a></li>
+                {{-- <li class="active"><a href="/">Beranda</a></li> --}}
+                <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}">Beranda</a></li>
+                {{-- <li><a href="{{url ('pembelajaran')}}">Pembelajaran</a></li> --}}
+                <li class="{{ request()->is('pembelajaran') ? 'active' : '' }}"><a href="{{ url('pembelajaran') }}">Pembelajaran</a></li>
+                {{-- <li><a href="{{url ('galeri')}}">Galeri</a></li> --}}
+                <li class="{{ request()->is('galeri') ? 'active' : '' }}"><a href="{{ url('galeri') }}">Galeri</a></li>
                 <li><a href="/#Products">Forum</a></li>
-                <li><a href="/#Team">Etalase</a></li>
+                {{-- <li><a href="/#Team">Etalase</a></li> --}}
+                <li class="{{ request()->is('etalase') ? 'active' : '' }}"><a href="{{ url('etalase') }}">Etalase</a></li>
 
-                <li><a href="{{ url('Help') }}"><i class="fas fa-headset"></i> Help</a></li>
+                <li><a href="{{ url('Help') }}"><i class="fas fa-headset"></i> Bantuan</a></li>
 
                 @if (Route::has('login'))
 
                     @auth
-                        <li class="drop-down"><a href="#"> <i class="far fa-user-circle "></i> My Account <i
+                        <li class="drop-down"><a href="#"> <i class="far fa-user-circle "></i> Akun Saya <i
                                     class="fas fa-angle-down"></i></a>
                             <ul>
                                 <li><a href="{{ url('dashboard') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                                 </li>
-                                <li><a href="{{ url('profile') }}"><i class="fas fa-user"></i> Profile</a></li>
-                                <li><a href="{{ url('Orders') }}"> <i class="fas fa-table"></i> Orders</a></li>
-                                <li><a href="{{ url('Payments') }}"><i class="fas fa-receipt"></i> Transactions</a></li>
+                                <li><a href="{{ url('profile') }}"><i class="fas fa-user"></i> Profil</a></li>
+                                <li><a href="{{ url('Orders') }}"> <i class="fas fa-table"></i> Pesanan</a></li>
+                                <li><a href="{{ url('cart') }}"> <i class="fas fa-table"></i> Keranjang</a></li>
+                                {{-- <li><a href="{{ url('Payments') }}"><i class="fas fa-receipt"></i> Pembayaran</a></li> --}}
+                                <a href="{{url('/')}}"> <i class="fas fa-receipt"></i>  Pembayaran</a>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i
                                         class="fas fa-sign-in-alt"></i> {{ __('Logout') }}</a>

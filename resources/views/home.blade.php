@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') ClaysPedia @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
@@ -20,7 +20,7 @@
         <img src=" {{asset('public/Img/about.png')}}" alt="" class="img-fluid" >
         </div>
         <div  align="center" class="col-md-8">
-            <h1 class="black-text" style="font-weight:bold;">About Gainloe</h1>
+            <h1 class="black-text" style="font-weight:bold;">About ClaysPedia</h1>
             <div class="col-md-3" style=" border-bottom: 2px solid #003399;"></div>
             <div class="row my-5" style="font-size:30px;">
               <div class="col-md-6" >

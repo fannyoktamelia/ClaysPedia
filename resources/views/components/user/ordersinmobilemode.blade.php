@@ -18,12 +18,12 @@
                                                 
                                             
                                                  <h6 align="left" style="color:white;font-family: 'Balsamiq Sans', cursive;" >
-                              <strong style="color:yellow;">Order Details: </strong><?php echo $item->Order_Details?>  
+                              <strong style="color:yellow;">Detail Order: </strong><?php echo $item->Order_Details?>  
                             </h6>
                           
                      
                           <p align="left"><strong style="color:yellow;">Amount: </strong> {{$item->Amount}} INR<br>
-                          <strong style="color:yellow;">Delivery Address: </strong> <br><?php echo $item->Delivery_Address ?></p>
+                          <strong style="color:yellow;">Alamat Pengiriman: </strong> <br><?php echo $item->Delivery_Address ?></p>
                   
                       <a href="{{url('Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2 ">Check Status</a>
                                  

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body style="margin: 0; padding: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td style="padding: 10px 0 30px 0;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #cccccc; border-collapse: collapse;">
                     <tr>
                         <td align="center"  style="">
-                            <img src="<?php echo e(asset('assets/img/Logo.webp')); ?>"  width="300" height="100" style="display:block;margin-top:20px;"/>
-                            
+                            <img src="<?php echo e(asset('assets/img/logoclaysped.webp')); ?>"  width="300" height="100" style="display:block;margin-top:20px;"/>
+
                         </td>
                     </tr>
                     <tr>
@@ -41,7 +41,7 @@
                                                               <!--  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/left.gif" alt="" width="100%" height="140" style="display: block;" />
                                                                LeftSide Image
                                                                -->
-                                                             
+
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -63,7 +63,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td style="padding: 25px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
-                                                                <!--Right Side Content 
+                                                                <!--Right Side Content
                                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.-->
                                                             </td>
                                                         </tr>
@@ -81,8 +81,8 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;" width="75%">
-                                       &copy;  Gainloe 2021<br/>
-                                       <font color="#ffffff">For More Details please feel free to  <a href="<?php echo e(url('Contact')); ?>" style="color: #ffffff;text-decoration:underline;">ContactUs</font></a> 
+                                       &copy;  ClaysPedia 2021<br/>
+                                       <font color="#ffffff">For More Details please feel free to  <a href="<?php echo e(url('Contact')); ?>" style="color: #ffffff;text-decoration:underline;">ContactUs</font></a>
                                     </td>
                                     <td align="right" width="25%">
                                         <table border="0" cellpadding="0" cellspacing="0">

@@ -1,27 +1,28 @@
 <?php $__env->startSection('title'); ?>
-Register - Gainloe
+Register - ClaysPedia
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('keywords'); ?>
- 
+
 
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('description'); ?>
- 
+
 <?php $__env->stopSection(); ?>
 
 
 <?php $__env->startSection('content'); ?>
- 
-<div align="center" class="container-fluid  my-3   animated bounceIn">
 
+<div align="center" class="container-fluid  my-3   animated bounceIn">
+<br><br><br>
         <div class="col-md-2 animated bounceIn" >
             <a href="/">
-            <img src="<?php echo e(asset('assets/img/Logo-Square.webp')); ?>" class="img-fluid px-2 py-2" style="width:200px;">
-            </a>
+            
+            <img src="<?php echo e(asset('assets/img/logoclaysped.webp')); ?>" class="img-fluid" style="width:200px;">
+        </a>
         </div>
-        <h5 class="my-2" > Create your Account</h5>
+        <h5 class="my-2" > Buat Akun Baru</h5>
         <div class="row justify-content-center ">
                 <div class="col-md-7" style="width: 100%">
 
@@ -37,7 +38,7 @@ Register - Gainloe
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('name'); ?> is-invalid <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>" name="name" value="<?php echo e(old('name')); ?>" required autocomplete="name" placeholder="<?php echo e(__('Name')); ?>" autofocus>
+endif; ?>" name="name" value="<?php echo e(old('name')); ?>" required autocomplete="name" placeholder="<?php echo e(__('Nama')); ?>" autofocus>
 
                                         <?php if ($errors->has('name')) :
 if (isset($message)) { $messageCache = $message; }
@@ -58,7 +59,7 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('email'); ?> is-invalid <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>" name="email" value="<?php echo e(old('email')); ?>" required placeholder="<?php echo e(__('E-Mail Address')); ?>" autocomplete="email">
+endif; ?>" name="email" value="<?php echo e(old('email')); ?>" required placeholder="<?php echo e(__('Alamat Email')); ?>" autocomplete="email">
 
                                         <?php if ($errors->has('email')) :
 if (isset($message)) { $messageCache = $message; }
@@ -96,26 +97,26 @@ endif; ?>
                                 <div class="form-group row  justify-content-center ">
 
                                     <div class="col-md-6">
-                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required  placeholder="<?php echo e(__('Confirm Password')); ?>" autocomplete="new-password">
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required  placeholder="<?php echo e(__('Konfirmasi Password')); ?>" autocomplete="new-password">
                                     </div>
                                 </div>
 
                                 <div class="form-group row mb-0  justify-content-center ">
                                     <div class="col-md-12 ">
                                         <button type="submit" class="btaobtn btaobtn-outline-dark px-2 py-2">
-                                            Create My Account
-                                        </button><br><br>By Signing up! You are agreeing all the <a href="<?php echo e(url('Terms-and-Conditions')); ?>" target="_blank">Terms and Conditions</a> 
+                                            Buat Akun
+                                        </button><br><br>Dengan Mendaftar! Anda menyetujui semua <a href="<?php echo e(url('Terms-and-Conditions')); ?>" target="_blank">Syarat dan Ketentuan</a>
                                     </div>
-                                    <div class="col-md-6 p-2">  <strong>Already Have an Account! Please <a href="login" ><u>Login</u></a></strong>
+                                    <div class="col-md-6 p-2">  <strong>Sudah Punya Akun! Silahkan <a href="login" ><u>Login</u></a></strong>
                                     </div>
                                     <div class="col-md-12 ">
-                                        or
-                                   <p class="my-2"> 
+                                        atau
+                                   <p class="my-2">
                                           <a class="black-text" href="/">
                                                <i class="fas fa-arrow-left"></i>
-                                           <u>Back to Gainloe</u>
+                                           <u>Kembali</u>
                                            </a>
-                                   </p> 
+                                   </p>
                                  </div>
                                 </div>
                             </form>

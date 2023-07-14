@@ -1,33 +1,33 @@
 @if (session('status'))
-  
+
       <script>
           $(document).ready(function () {
            alertify.set('notifier','position','top-right');
-                
-  
+
+
                 alertify.alert("Status","Item Removed Succesfully");
           });
      </script>
-     
-@endif  
+
+@endif
 
 @if (session('cartclear'))
-  
+
       <script>
           $(document).ready(function () {
            alertify.set('notifier','position','top-right');
-                
-  
+
+
                 alertify.alert("Status","All Items are Removed from the Cart!");
           });
      </script>
-     
-@endif  
+
+@endif
 <div class="px-5" style="margin-top:-4%;">
     <div class="shopping-cart">
         <?php $total = 0 ?>
         @if(session('cart'))
-        
+
             <div class="shopping-cart-table">
                 <div class="table-responsive">
                     <div class="col-md-12 text-right mb-3" style="margin-top:15px;">
@@ -37,17 +37,17 @@
                             <thead  class="table-bordered" style="background: white;border-style:solid;">
                             <tr>
                             <th class="cart-image">Image</th>
-                            <th class="cart-product-name">Product Name</th>
+                            <th class="cart-product-name">Nama Product</th>
                             <th class="cart-qty">Quantity</th>
                             <th class="cart-total">Price</th>
                             <th class="cart-romove">Remove</th>
                             </tr>
                             </thead>
-                            
+
                             <tbody class="my-auto">
                                 @foreach(session('cart') as $id => $details)
                                 <?php $total += $details['Final_Price'] * $details['item_quantity'] ?>
-                                
+
                                     <tr class="cartpage">
                                         <td class="cart-image">
                                         <a class="entry-thumbnail" href="javascript:void(0)">
@@ -58,10 +58,10 @@
                                             <h4 class='cart-product-description'>
                                             <a href="javascript:void(0)">{{ $details['item_name'] }}</a>
                                             </h4>
-                                            
+
                                         </td>
                                         <td class="cart-product-quantity">
-                                            
+
                                         <input type="hidden" class="product_id" value="{{ $details['item_id'] }}">
                                             <div class="modify_quantity">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
@@ -83,7 +83,7 @@
                                             <form action="delete-from-cart" method="post">
                                                 @csrf
                                                 <input type="hidden"  name="id" value="{{ $id }}">
-                                          
+
                                         <button type="submit" class="  badge badge-pill btn-danger px-2 py-2" data-id="{{ $id }}" ><i class="fas fa-trash" ></i> </button>
                                     </form>
                                         </td>
@@ -93,8 +93,8 @@
                             </table>
                 </div>
             </div>
-    
-      
+
+
             <div class="row">
                 <div class="col-md-8 col-sm-12 estimate-ship-tax">
                     <div>
@@ -134,14 +134,14 @@
             <div class="row">
                 <div class="col-md-12 mycard py-5 text-center">
                     <div class="mycards">
-                        <h4>Your cart is currently empty.</h4>
-                        <a href="{{url('/')}}" class="btn btn-upper btn-primary outer-left-xs mt-5" style="border-radius:30px;">Continue Shopping</a>
+                        <h4>Keranjang anda saat ini kosong.</h4>
+                        <a href="{{url('/etalase')}}" class="btn btn-upper btn-primary outer-left-xs mt-5" style="border-radius:30px;">Lanjut Belanja</a>
                     </div>
                 </div>
             </div>
         @endif
 
-        
+
 
 
     </div>

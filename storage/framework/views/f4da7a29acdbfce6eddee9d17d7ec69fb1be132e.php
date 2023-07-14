@@ -1,4 +1,4 @@
-<?php $__env->startSection('title'); ?> Gainloe - FAQ'S <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> ClaysPedia - FAQ'S <?php $__env->stopSection(); ?>
 <?php $__env->startSection('keywords'); ?> Home,About,Contact,Car <?php $__env->stopSection(); ?>
 <?php $__env->startSection('description'); ?> Write some descripton about the webpage <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
@@ -8,28 +8,28 @@
         background:#f2f2f2;
     }
     @media (max-width: 768px)
-    { 
+    {
           .contactwidth
         {
             width:100%;
         }
     }
      @media (min-width: 768px)
-    { 
+    {
         .contactwidth
         {
             width:60%;
         }
     }
 </style>
-<!-- ======= Contact Section Starts Here ======= --> 
- 
+<!-- ======= Contact Section Starts Here ======= -->
+
 <section id="contact" class="contact">
     <div class="container contactwidth"  >
 
       <div class="section-title">
-      
-        <h2>Contact</h2> 
+
+        <h2>Contact</h2>
       </div>
 
       <div class="row">
@@ -85,7 +85,7 @@ Sandeep : +91 9989910822</p>
               <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
               <div class="validate"></div>
             </div>
-             
+
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
@@ -95,9 +95,9 @@ Sandeep : +91 9989910822</p>
     </div>
 </section>
 
-<!-- ======= Contact Section Ends Here ======= --> 
+<!-- ======= Contact Section Ends Here ======= -->
 
-  
+
    <?php if(session('status')): ?>
 
         <script>
@@ -146,7 +146,7 @@ Sandeep : +91 9989910822</p>
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         
+
          <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
        </div>
      </div>
@@ -154,7 +154,7 @@ Sandeep : +91 9989910822</p>
    </div>
  </div>
  <!-- Central Modal Medium Success-->
- 
+
  <!-- Central Modal Medium Danger -->
  <div class="modal fade" id="centralModaldanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
    aria-hidden="true">
@@ -173,7 +173,7 @@ Sandeep : +91 9989910822</p>
        <!--Body-->
        <div class="modal-body">
          <div class="text-center">
-             
+
            <i class="fas fa-exclamation fa-4x mb-3 animated rotateIn"></i>
            <p><?php if($errors->any()): ?>
     <?php echo implode('', $errors->all('<div>:message</div>')); ?>
@@ -184,7 +184,7 @@ Sandeep : +91 9989910822</p>
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         
+
          <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Close</a>
        </div>
      </div>
@@ -192,6 +192,7 @@ Sandeep : +91 9989910822</p>
    </div>
  </div>
  <!-- Central Modal Medium Danger-->
- 
+
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\cpedia\resources\views/Contact.blade.php ENDPATH**/ ?>

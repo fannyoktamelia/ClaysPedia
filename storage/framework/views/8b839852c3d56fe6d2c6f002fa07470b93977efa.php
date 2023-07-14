@@ -1,15 +1,15 @@
-<?php $__env->startSection('title'); ?> Gainloe <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> ClaysPedia <?php $__env->stopSection(); ?>
 <?php $__env->startSection('keywords'); ?> Home,About,Contact,Car <?php $__env->stopSection(); ?>
 <?php $__env->startSection('description'); ?> Write some descripton about the webpage <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
- 
 
-<div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
-      
 
- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="<?php echo e(url('dashboard')); ?>" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Orders </a> </strong> </p>
-            
-    
+<div class="px-5 py-2" style="background:#EEDDCC;margin-top:5px;" >
+
+
+ <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="<?php echo e(url('dashboard')); ?>" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Pesanan </a> </strong> </p>
+
+
 </div>
 
 <div id="mySidenav" class="sidenav">
@@ -46,7 +46,7 @@ function closeNav() {
 
  <!-- Orders Section Ends Here-->
 
-    
+
 
 
 <?php if(session('status')): ?>
@@ -60,7 +60,7 @@ function closeNav() {
         </script>
 <?php endif; ?>
 
- 
+
  <!-- Central Modal Medium Success -->
  <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
    aria-hidden="true">
@@ -94,8 +94,8 @@ function closeNav() {
    </div>
  </div>
  <!-- Central Modal Medium Success-->
- 
- 
+
+
  <?php if(session('Order_Status')): ?>
     <?php echo $__env->make('components.user.orderstatus', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <script>
@@ -106,4 +106,5 @@ function closeNav() {
     </script>
  <?php endif; ?>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\cpedia\resources\views/dashboards/user/orders.blade.php ENDPATH**/ ?>

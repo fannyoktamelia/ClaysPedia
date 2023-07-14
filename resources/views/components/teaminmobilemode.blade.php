@@ -8,10 +8,10 @@
           
           <div class="col-6" >
                 <div class="card mb-2">
-                    <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+                    <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                       alt="Card image cap">
                     <div align="left" class="card-body">
-                      <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                      <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                       <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
                   
                     </div>
@@ -20,10 +20,10 @@
           </div>
           <div class="col-6" >
             <div class="card mb-2">
-                <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+                <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                   alt="Card image cap">
                 <div align="left" class="card-body">
-                  <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                  <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                   <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
               
                 </div>
@@ -38,10 +38,10 @@
               
             <div class="col-6" >
               <div class="card mb-2">
-                  <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+                  <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                     alt="Card image cap">
                   <div align="left" class="card-body">
-                    <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                    <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                     <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
                 
                   </div>
@@ -50,10 +50,10 @@
         </div>
         <div class="col-6" >
           <div class="card mb-2">
-              <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+              <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                 alt="Card image cap">
               <div align="left" class="card-body">
-                <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                 <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
             
               </div>
@@ -67,10 +67,10 @@
                       
                     <div class="col-6" >
                         <div class="card mb-2">
-                            <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+                            <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                               alt="Card image cap">
                             <div align="left" class="card-body">
-                              <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                              <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                               <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
                           
                             </div>
@@ -79,10 +79,10 @@
                   </div>
                   <div class="col-6" >
                     <div class="card mb-2">
-                        <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/rahul.jpg"
+                        <img class="card-img-top  animated pulse infinite slow" src="https://www.btao.in/resources/images/ourteam/karina.jpeg"
                           alt="Card image cap">
                         <div align="left" class="card-body">
-                          <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">Rahul</h6>
+                          <h6 class="card-title font-weight-bold" style="font-family: 'Josefin Sans', sans-serif;">karina</h6>
                           <p class="card-text" style="font-family: 'Balsamiq Sans', cursive;margin-top:-12px;font-size:10px;"><i> Desgination </i></p>
                       
                         </div>

@@ -1,26 +1,26 @@
 @extends('layouts.app')
 @section('title')
-Login - Gainloe
+Login - ClaysPedia
 @endsection
 
 @section('keywords')
-Login in Gainloe, signin
+Login in ClaysPedia, signin
 
 @endsection
 
 @section('description')
-Login  and  book your  products
+Login  dan Belajar Bersama ClaysPedia
 
 @endsection
 
 
 @section('content')
- 
-<div align="center" class="container-fluid my-3 animated bounceIn">
 
-    <div class="col-md-2">
+<div align="center" class="container-fluid my-3 animated bounceIn">
+<br><br><br>
+    <div class="col-md-10">
         <a href="/">
-            <img src="{{asset('assets/img/Logo-Square.webp')}}" class="img-fluid px-2 py-2" style="width:200px;">
+            <img src="{{ asset('assets/img/logoclaysped.webp') }}" class="img-fluid" style="width:200px;">
         </a>
     </div>
    <h5 class="my-2" >Login</h5>
@@ -32,7 +32,7 @@ Login  and  book your  products
                             <div class="form-group row justify-content-center">
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('E-Mail Address') }}" autocomplete="email"  autofocus>
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('Alamat Email') }}" autocomplete="email"  autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -61,7 +61,7 @@ Login  and  book your  products
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                         <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
+                                            {{ __('Ingat Saya') }}
                                         </label>
                                     </div>
                                 </div>
@@ -72,21 +72,21 @@ Login  and  book your  products
                                     <button type="submit" class="btaobtn btaobtn-dark px-5 py-2">
                                         {{ __('Login') }}
                                     </button>
-                                        
+
                                         @if (Route::has('password.request'))
                                             <a class="btn btn-link col-md-12" href="{{ route('password.request') }}">
-                                                {{ __('Forgot Your Password?') }}
+                                                {{ __('Lupa Kata Sandi?') }}
                                             </a>
                                         @endif
-                                 <strong>Not Having an Account! <br>Then <a href="register" ><u>Create a New Account</u></a></strong>
+                                 <strong>Belum punya akun? <br>Ayo <a href="register" ><u>Buat Akun Baru</u></a></strong>
                                 </div>
                                  <div class="col-md-12 ">
-                                   <p class="my-2"> 
+                                   <p class="my-2">
                                           <a class="black-text" href="/">
                                                <i class="fas fa-arrow-left"></i>
-                                           <u>Back to Gainloe</u>
+                                           <u>Kembali</u>
                                            </a>
-                                   </p> 
+                                   </p>
                                  </div>
                             </div>
                         </form>

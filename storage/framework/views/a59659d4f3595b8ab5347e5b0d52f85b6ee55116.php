@@ -40,25 +40,31 @@
 
             <ul style="margin-top:5px;">
 
-                <li class="active"><a href="/">Beranda</a></li>
-                <li><a href="/#About">Pembelajaran</a></li>
-                <li><a href="/#Products">Galeri</a></li>
+                
+                <li class="<?php echo e(request()->is('/') ? 'active' : ''); ?>"><a href="<?php echo e(url('/')); ?>">Beranda</a></li>
+                
+                <li class="<?php echo e(request()->is('pembelajaran') ? 'active' : ''); ?>"><a href="<?php echo e(url('pembelajaran')); ?>">Pembelajaran</a></li>
+                
+                <li class="<?php echo e(request()->is('galeri') ? 'active' : ''); ?>"><a href="<?php echo e(url('galeri')); ?>">Galeri</a></li>
                 <li><a href="/#Products">Forum</a></li>
-                <li><a href="/#Team">Etalase</a></li>
+                
+                <li class="<?php echo e(request()->is('etalase') ? 'active' : ''); ?>"><a href="<?php echo e(url('etalase')); ?>">Etalase</a></li>
 
-                <li><a href="<?php echo e(url('Help')); ?>"><i class="fas fa-headset"></i> Help</a></li>
+                <li><a href="<?php echo e(url('Help')); ?>"><i class="fas fa-headset"></i> Bantuan</a></li>
 
                 <?php if(Route::has('login')): ?>
 
                     <?php if(auth()->guard()->check()): ?>
-                        <li class="drop-down"><a href="#"> <i class="far fa-user-circle "></i> My Account <i
+                        <li class="drop-down"><a href="#"> <i class="far fa-user-circle "></i> Akun Saya <i
                                     class="fas fa-angle-down"></i></a>
                             <ul>
                                 <li><a href="<?php echo e(url('dashboard')); ?>"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                                 </li>
-                                <li><a href="<?php echo e(url('profile')); ?>"><i class="fas fa-user"></i> Profile</a></li>
-                                <li><a href="<?php echo e(url('Orders')); ?>"> <i class="fas fa-table"></i> Orders</a></li>
-                                <li><a href="<?php echo e(url('Payments')); ?>"><i class="fas fa-receipt"></i> Transactions</a></li>
+                                <li><a href="<?php echo e(url('profile')); ?>"><i class="fas fa-user"></i> Profil</a></li>
+                                <li><a href="<?php echo e(url('Orders')); ?>"> <i class="fas fa-table"></i> Pesanan</a></li>
+                                <li><a href="<?php echo e(url('cart')); ?>"> <i class="fas fa-table"></i> Keranjang</a></li>
+                                
+                                <a href="<?php echo e(url('/')); ?>"> <i class="fas fa-receipt"></i>  Pembayaran</a>
                                 <a href="<?php echo e(route('logout')); ?>"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i
                                         class="fas fa-sign-in-alt"></i> <?php echo e(__('Logout')); ?></a>
